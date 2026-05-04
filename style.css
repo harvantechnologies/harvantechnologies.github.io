@@ -1,0 +1,98 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0a0a0a;
+  color: #fff;
+  margin: 0;
+}
+
+/* NAV */
+.navbar {
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
+}
+
+.navbar a {
+  color: white;
+  margin-left: 20px;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+/* BUTTON */
+.btn-main {
+  padding: 12px 30px;
+  background: linear-gradient(45deg,#6C63FF,#00D4FF);
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+/* SECTIONS */
+.section {
+  padding: 100px 0;
+}
+
+.section.dark {
+  background: #111;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+/* SERVICE CARD */
+.card-service {
+  padding: 30px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.card-service:hover {
+  transform: translateY(-10px);
+  background: rgba(255,255,255,0.1);
+}
+
+/* PROJECT */
+.project-card {
+  height: 200px;
+  background: #222;
+  border-radius: 15px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition:0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+/* FORM */
+form input, form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+}
